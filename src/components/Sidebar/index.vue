@@ -1,24 +1,20 @@
 <template>
   <el-menu
-    active-text-color="#f4f4f5"
+    active-text-color="#1890ff"
     background-color="rgb(48, 65, 86)"
     class="sidebar"
     default-active="2"
-    text-color="#fff"
+    text-color="#ffffff"
     @open="handleOpen"
     @close="handleClose"
   >
-    <SidebarItem
-      v-for="menu in menuData"
-      :key="`${menu.path}-${menu.name}`"
-      :menu="menu"
-    />
+    <SidebarItem v-for="menu in menuData" :key="`${menu.path}-${menu.name}`" :menu="menu" />
   </el-menu>
 </template>
 
 <script lang="ts" setup>
 import SidebarItem from "./SidebarItem.vue";
-import  type {PropType} from "vue";
+import type { PropType } from "vue";
 interface IMeta {
   title: string;
   icon: null;
@@ -43,8 +39,8 @@ const props = defineProps({
   },
 });
 
-const handleOpen = () => {};
-const handleClose = () => {};
+const handleOpen = () => { };
+const handleClose = () => { };
 </script>
 
 <style scoped>
