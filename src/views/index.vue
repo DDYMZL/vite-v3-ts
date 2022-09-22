@@ -1,12 +1,18 @@
 <template>
   <div class="app-wrapper">
     <Sidebar :menu-data="menuData" />
-    <div class="">我是首页</div>
+    <div class="main-container">
+      <Header />
+      <div class="main-body">
+
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import Sidebar from "@/components/Sidebar/index.vue";
+import Header from "@/components/Header/index.vue";
 import { ref } from "vue";
 
 interface IMeta {
@@ -916,5 +922,8 @@ menuData.value = [
   display: flex;
   flex-direction: row;
   height: 100vh;
+}
+.main-container{
+  flex: 1;
 }
 </style>
