@@ -13,7 +13,7 @@
       </el-sub-menu>
     </template>
     <template v-else>
-      <el-menu-item :index="`${menu.path}-${menu.name}`">
+      <el-menu-item :index="menu.path" >
         <span>{{ menu.name }}</span>
       </el-menu-item>
     </template>

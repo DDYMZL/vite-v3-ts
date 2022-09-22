@@ -5,6 +5,7 @@
     class="sidebar"
     default-active="2"
     text-color="#ffffff"
+    router
     @open="handleOpen"
     @close="handleClose"
   >
