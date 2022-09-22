@@ -4,6 +4,7 @@
     <div class="main-container">
       <Header />
       <div class="main-body">
+        <router-view />
       </div>
     </div>
   </div>
