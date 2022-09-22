@@ -4,15 +4,24 @@ import App from "../App.vue";
 import Home from "@/views/index.vue";
 import Login from "@/views/login.vue";
 
+import business from './module/business'
+import system from './module/system'
+
 const routes: RouteRecordRaw[] = [
   {
     path: "/",
     component: App,
     children: [
       {
-        path: "home",
-        name: "home",
+        path: "business",
+        name: "business",
+        children: business
+      },
+      {
+        path: "system",
+        name: "system",
         component: Home,
+        children: system,
       },
       {
         path: "login",
