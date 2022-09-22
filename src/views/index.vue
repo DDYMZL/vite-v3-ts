@@ -4,7 +4,6 @@
     <div class="main-container">
       <Header />
       <div class="main-body">
-
       </div>
     </div>
   </div>
@@ -35,7 +34,7 @@ interface IMenuData {
 const menuData = ref<IMenuData[]>([]);
 menuData.value = [
   {
-    path: "/buss-management",
+    path: "/business",
     name: "业务管理",
     meta: {
       title: "统筹管理",
@@ -48,7 +47,7 @@ menuData.value = [
     urlType: 2,
     children: [
       {
-        path: "/buss-management/details",
+        path: "/business/details",
         name: "业务详情",
         meta: {
           title: "业务看板",
@@ -61,7 +60,7 @@ menuData.value = [
         urlType: 2,
         children: [
           {
-            path: "/buss-management/details/water",
+            path: "/business/details/water",
             name: "供水",
             meta: {
               title: "供水",
@@ -75,7 +74,7 @@ menuData.value = [
             children: [],
           },
           {
-            path: "/buss-management/details/drain",
+            path: "/business/details/drain",
             name: "排水",
             meta: {
               title: "排水",
