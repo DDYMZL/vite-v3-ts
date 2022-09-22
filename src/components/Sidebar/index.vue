@@ -18,10 +18,27 @@
 
 <script lang="ts" setup>
 import SidebarItem from "./SidebarItem.vue";
+import  type {PropType} from "vue";
+interface IMeta {
+  title: string;
+  icon: null;
+  roles: null;
+}
+
+interface IMenuData {
+  path: string;
+  name: string;
+  meta: IMeta;
+  redirect: string | null;
+  isLayout: string | null;
+  component: string | null;
+  urlType: number;
+  children: IMenuData[];
+}
 
 const props = defineProps({
   menuData: {
-    type: Array,
+    type: Array as PropType<IMenuData[]>,
     default: () => [],
   },
 });

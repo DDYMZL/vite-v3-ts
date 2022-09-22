@@ -23,10 +23,10 @@ interface IMenuData {
   isLayout: string | null;
   component: string | null;
   urlType: number;
-  children: [IMenuData];
+  children: IMenuData[];
 }
 
-const menuData = ref<[IMenuData]>([]);
+const menuData = ref<IMenuData[]>([]);
 menuData.value = [
   {
     path: "/management",
