@@ -10,7 +10,7 @@
   "commentTranslate.targetLanguage": "zh-TW",
   "compile-hero.disable-compile-files-on-did-save-code": true,
   "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "Vue.volar"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
