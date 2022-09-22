@@ -17,12 +17,18 @@ const routes: RouteRecordRaw[] = [
         path: "business",
         name: "business",
         component: Home,
+        meta: {
+          title: '业务管理'
+        },
         children: business
       },
       {
         path: "system",
         name: "system",
         component: Home,
+        meta: {
+          title: '系统管理'
+        },
         children: system,
       },
       {
