@@ -144,7 +144,8 @@ menuData.value = [
   flex-direction: row;
   height: 100vh;
 }
-.main-container{
+
+.main-container {
   flex: 1;
 }
 </style>
