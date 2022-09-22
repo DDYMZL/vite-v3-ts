@@ -14,6 +14,7 @@
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.0.9",
     "element-plus": "^2.2.17",
     "sass": "^1.54.9",
     "vue": "^3.2.37",
